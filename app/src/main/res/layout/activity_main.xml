@@ -75,15 +75,26 @@
 
         <!--4 четверть-->
         <LinearLayout
+            android:id="@+id/fourth_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1">
 
             <ImageView
+                android:id="@+id/mem"
                 android:alpha="100"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/mem" />
+
+            <TextView
+                android:id="@+id/enot"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/raccoon"
+                android:textSize="30sp"
+                android:visibility="invisible"/>
         </LinearLayout>
 
 
