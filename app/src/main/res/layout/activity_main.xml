@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!--1 четверть-->
+        <LinearLayout
+            android:id="@+id/first_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="@color/yellow">
+            <Button
+                android:id="@+id/change_color_button"
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:text="Click"
+                android:textSize="30sp"/>
+        </LinearLayout>
+
+        <!--3 четверть-->
+        <LinearLayout
+            android:id="@+id/third_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/blue">
+            <TextView
+                android:id="@+id/third_layout_text"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/tv"
+                android:textSize="40sp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!--2 четверть-->
+        <LinearLayout
+            android:id="@+id/second_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@color/grey"
+            android:layout_weight="1">
+            <EditText
+                android:id="@+id/edit_text"
+                android:inputType="text"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:hint="@string/type_text_here"
+                android:maxLines="1"
+                android:gravity="center"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <!--4 четверть-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:alpha="100"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/mem" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
